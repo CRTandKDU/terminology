@@ -1,0 +1,53 @@
+[
+  {
+    "DOI": "10.1080/09515089508573144",
+    "ISSN": "1465-394X",
+    "URL": "http://dx.doi.org/10.1080/09515089508573144",
+    "author": [
+      {
+        "family": "Revonsuo",
+        "given": "Antti"
+      }
+    ],
+    "container-title": "Philosophical Psychology",
+    "id": "Revonsuo_1995",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          1995,
+          1
+        ]
+      ]
+    },
+    "page": "35-58",
+    "publisher": "Informa UK Limited",
+    "title": "Consciousness, dreams and virtual realities",
+    "type": "article-journal",
+    "volume": "8"
+  },
+  {
+    "DOI": "10.1007/978-1-4757-0423-5_7",
+    "ISBN": "9781475704235",
+    "URL": "http://dx.doi.org/10.1007/978-1-4757-0423-5_7",
+    "author": [
+      {
+        "family": "LaBerge",
+        "given": "Stephen"
+      }
+    ],
+    "container-title": "Conscious mind, sleeping brain",
+    "id": "LaBerge_1988",
+    "issued": {
+      "date-parts": [
+        [
+          1988
+        ]
+      ]
+    },
+    "page": "135-153",
+    "publisher": "Springer New York",
+    "title": "The psychophysiology of lucid dreaming",
+    "type": "chapter"
+  }
+]

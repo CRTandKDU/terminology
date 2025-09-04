@@ -1,0 +1,76 @@
+@Article{Revonsuo_1995,
+  author =	 {Revonsuo, Antti},
+  title =	 {Consciousness, dreams and virtual realities},
+  journal =	 {Philosophical Psychology},
+  year =	 1995,
+  volume =	 8,
+  number =	 1,
+  month =	 jan,
+  pages =	 {35–58},
+  issn =	 {1465-394X},
+  doi =		 {10.1080/09515089508573144},
+  url =		 {http://dx.doi.org/10.1080/09515089508573144},
+  publisher =	 {Informa UK Limited}
+}
+
+@InBook{LaBerge_1988,
+  title =	 {The Psychophysiology of Lucid Dreaming},
+  year =	 1988,
+  author =	 {LaBerge, Stephen},
+  booktitle =	 {Conscious Mind, Sleeping Brain},
+  publisher =	 {Springer New York},
+  isbn =	 9781475704235,
+  pages =	 {135–153},
+  doi =		 {10.1007/978-1-4757-0423-5_7},
+  url =		 {http://dx.doi.org/10.1007/978-1-4757-0423-5_7}
+}
+
+@InCollection{LGC2025,
+  author =	 {Giuliano da Empoli},
+  title =	 {L'Empire de l'ombre},
+  booktitle =	 {Le Grand Continent},
+  publisher =	 {Gallimard},
+  year =	 2025,
+  volume =	 4
+}
+
+@misc{Tooze_2025_1,
+  title =	 {Trump’s futurism: Elon’s rockets and fewer dolls for
+                  “baby girl”},
+  url =
+                  {https://adamtooze.substack.com/p/chartbook-380-trumps-futurism-elons},
+  journal =	 {Chartbook},
+  publisher =	 {Substack},
+  author =	 {Tooze, Adam},
+  year =	 2025,
+  month =	 {May}
+}
+
+@misc{Tooze_2025_2,
+  title =	 {Trumps's Futurism: Musk's Space Junk},
+  url =
+                  {https://adamtooze.substack.com/p/chartbook-381-trumpite-futurism-part},
+  journal =	 {Chartbook},
+  publisher =	 {Substack},
+  author =	 {Tooze, Adam},
+  year =	 2025,
+  month =	 {May}
+}
+
+@misc{Jackson_2025,
+  title =	 {Corporate Populism: Musk's Challenge to the Rule of
+                  Law and Equity},
+  url =		 {https://ssrn.com/abstract=5205633},
+  author =	 {Jackson, Katharine},
+  year =	 2025,
+  month =	 {April}
+}
+
+@book{lemoine2025hypnocratie,
+  title =	 {Hypnocratie: Trump, Musk et la fabrique du r{\'e}el},
+  author =	 {Lemoine, M. and Colamedici, A. and Thom, M. and Xun, J.},
+  isbn =	 9782487699151,
+  url =		 {https://books.google.fr/books?id=UvBV0QEACAAJ},
+  year =	 2025,
+  publisher =	 {Philosophie Magazine Editeur}
+}
