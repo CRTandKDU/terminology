@@ -1,3 +1,4 @@
+;; -*- mode:emacs-lisp; -*-
 ;; Some workflow ideas:
 ;; - Use (require 'biblio) to create a bixtex file
 ;; - Convert it to JSON:
@@ -9,8 +10,48 @@
 (require 'cl-lib)	
 (require 'company)
 
-(defvar terminology-cosma-zero-id 240000 "Start beyond 23:59:59 for id generation")
+;; Define form
+(setq 
+ documents-directory "C:\\Users\\chauv\\Documents\\TERMINOLOGY\\"
+ forms-file (expand-file-name "terminology-terms.dat" documents-directory))
 
+(setq forms-field-sep "§")
+
+(setq forms-number-of-fields
+      (forms-enumerate
+       '(terminology-term
+         terminology-abbreviation
+         terminology-domain
+         terminology-synonym
+         terminology-definition
+         terminology-notes
+         terminology-seealso
+         terminology-foreign
+         terminology-attention
+	 )))
+
+;; The format list.
+(setq forms-format-list
+      (list
+       "====== Terminology ======\n\n"
+       "Terme : "			terminology-term
+       "\nAbrev. : "			terminology-abbreviation      
+       "\nDomaine : "			terminology-domain
+       "\n"
+       
+       "\nDéfinition : "		terminology-definition
+       "\nNotes : "			terminology-notes
+       "\nVoir aussi : "		terminology-seealso
+       "\nÉquivalent étranger : "	terminology-foreign
+       
+       "\n\n====== Comments ======\n\n"
+       terminology-attention
+       ))
+
+;;----------------------------------------------------------------------
+
+(defvar terminology-cosma-zero-id 240000 "Start beyond 23:59:59 for id generation")
+(defvar terminology-temp-out-buffer "*OUT-CSV*")
 (defconst terminology-cosma-yaml-template "---
 title: %s
 id: %s
@@ -21,7 +62,6 @@ tags:
 
 "
   "Template for root node and yaml headers of individual .md files.")
-
 
 (defun terminology-cosma--newid ()
   "Generates a new unique id from the current day and incremented
@@ -34,36 +74,61 @@ global counter."
     (format "%04d%02d%02d%6s" (nth 5 now) (nth 4 now) (nth 3 now) end)))
 
 (defun terminology--parse-current-row ()
-       (let ((fields (csv-parse-current-row))
-	     )
-	 (with-current-buffer (get-buffer-create "*OUT-CSV*")
-	   (erase-buffer)
-	   (insert (format terminology-cosma-yaml-template
-			   (car fields)
-			   (terminology-cosma--newid)
-			   (caddr fields)
-			   "" ;; Tags
-			   )
-		   (car (cddddr fields))))))
+  (let ((fields (csv-parse-current-row))
+	(newid (terminology-cosma--newid))
+	)
+    (with-current-buffer (get-buffer-create terminology-temp-out-buffer)
+      (erase-buffer)
+      (insert (format terminology-cosma-yaml-template
+		      (car fields)
+		      newid
+		      (caddr fields)
+		      "" ;; Tags
+		      )
+	      (car (cddddr fields))))
+    (cons (car fields) newid)
+    ))
+
+(defun terminology--patch-links (count title-id)
+  (dotimes (i (1- count))
+    (let ((fni (format "out/term_%d.md" (1+ i)))
+	  )
+      (with-current-buffer (get-buffer-create terminology-temp-out-buffer)
+	(erase-buffer)
+	(insert-file-contents fni)
+	(dolist (tid title-id)
+	  (replace-string-in-region (format "[[%s]]" (car tid)) (format "[[%s|%s]]" (cdr tid) (car tid)) (point-min) (point-max))
+	  )
+	(write-region nil nil fni)
+	)
+      )
+    )
+  )
 			   
-(defun terminology--generate-md-dir () (interactive)
+(defun terminology--generate-md-files () (interactive)
+       (set-language-environment "UTF-8")
        (let ((count 1)
 	     (coding-system-for-write 'utf-8)
+	     (title-id nil)
 	     )
-	 (with-current-buffer (get-buffer "terminology-terms.dat")
+	 ;; Create as many .md files as records with new uuids
+	 (with-current-buffer (get-buffer (file-name-nondirectory forms-file))
 	   (csv-mode)
 	   (customize-set-variable 'csv-separators '("§"))
 	   (save-excursion
 	     (goto-char (point-min))
 	     (while (not (eobp))
-	       (terminology--parse-current-row)
-	       (with-current-buffer (get-buffer "*OUT-CSV*")
+	       (setq title-id (cons (terminology--parse-current-row) title-id))
+	       (with-current-buffer (get-buffer terminology-temp-out-buffer)
 		 (write-region nil nil (format "out/term_%d.md" count)))
 	       (setq count (1+ count))
 	       (forward-line)
 	       )
 	     )
-	   )))
+	   )
+	 ;; Revisit all generated files and replace title-based links with uuid-based ones
+	 (terminology--patch-links count title-id)
+	 ))
 
 ;;----------------------------------------------------------------------
 
@@ -155,15 +220,6 @@ global counter."
 
 ;; Install hooks, advises and globales
 
-(defun terminology--imenu-list-refresh (arg)
-  (imenu-list-clear)
-  (imenu-list-refresh))
-
-(advice-remove 'terminology--imenu-list-refresh #'forms-insert-record)
-(advice-remove 'terminology--imenu-list-refresh #'forms-delete-record)
-(advice-add 'terminology--imenu-list-refresh :before #'forms-insert-record)
-(advice-add 'terminology--imenu-list-refresh :after  #'forms-delete-record)
-
 (setq
  imenu-create-index-function	#'terminology-form--create-index
  forms-mode-hook		#'imenu-list
@@ -172,43 +228,4 @@ global counter."
 
 ;;----------------------------------------------------------------------
 
-;; Define form
-(setq 
- documents-directory "C:\\Users\\chauv\\Documents\\TERMINOLOGY\\"
- forms-file (expand-file-name
-	     "terminology-terms.dat"
-	     documents-directory))
-
-(setq forms-field-sep "§")
-
-(setq forms-number-of-fields
-      (forms-enumerate
-       '(terminology-term
-         terminology-abbreviation
-         terminology-domain
-         terminology-synonym
-         terminology-definition
-         terminology-notes
-         terminology-seealso
-         terminology-foreign
-         terminology-attention
-	 )))
-
-;; The format list.
-(setq forms-format-list
-      (list
-       "====== Terminology ======\n\n"
-       "Terme : "			terminology-term
-       "\nAbrev. : "			terminology-abbreviation      
-       "\nDomaine : "			terminology-domain
-       "\n"
-       
-       "\nDéfinition : "		terminology-definition
-       "\nNotes : "			terminology-notes
-       "\nVoir aussi : "		terminology-seealso
-       "\nÉquivalent étranger : "	terminology-foreign
-       
-       "\n\n====== Attention ======\n\n"
-       terminology-attention
-       ))
 

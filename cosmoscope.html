@@ -13,7 +13,7 @@
     
     <meta name="keywords" content="">
     
-    <meta name="date" content="September 4, 2025 at 2:03:47 PM">
+    <meta name="date" content="September 5, 2025 at 7:01:28 PM">
     <title>Cosma — Grand Continent</title>
 
     <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAIGaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJYTVAgQ29yZSA2LjAuMCI+CiAgIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICAgICAgICAgIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIgogICAgICAgICAgICB4bWxuczpleGlmPSJodHRwOi8vbnMuYWRvYmUuY29tL2V4aWYvMS4wLyI+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgICAgIDxleGlmOlBpeGVsWERpbWVuc2lvbj4xMDI0PC9leGlmOlBpeGVsWERpbWVuc2lvbj4KICAgICAgICAgPGV4aWY6UGl4ZWxZRGltZW5zaW9uPjEwMjQ8L2V4aWY6UGl4ZWxZRGltZW5zaW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KokyVsAAAAAlwSFlzAAALEwAACxMBAJqcGAAAATtQTFRFR3BMDVJzDFx+GHSUAP//DVByCVd3AAAAAAD/AIKBCXKSBFJ0F1x/GFZ2EGCANmF8D2+QGHaXFG6NAFh8EnaXG3aWLHCOE2iIH3mZAEx4AFV6AG2QAXOUOn+dprG8AHGSGmuLGWmJfZqtUoahprrGD1V4CVV4FHeWFnWWLmeIAFp8FWaGAFh7LmeGF2OGUHWNfZapAF+HUHSNfZaoAF6H/////Pz87O7x4uLio6Oj3t7eFWaJE16DGGCEIWuOAFqAGoCiADxyAFyHRG+MHoGjAGeQE3GUEG6S1tvhAH2iRX+cAG2Y5OjrAGWMiqCxoa+7iqGyobXBB2KGCF6DCGGFCl2DE4CiEX2gGXqdEX2fFX+iJHmcGXqcInmbAEx3aIWa193jAE12Z4Sa5ensZ5CmaZCn1t3j5Ons3t7fp3RRZgAAADV0Uk5TAHRwQQFHRAEBAkJ4+3h0eHBudPpy+3V1cvv7+vpy+/v7+/v7+52dmZl1+nX6dXX7+/v7+/siYXfnAAAA2ElEQVQYGQXBy07CUBRA0X1OD9zCQAloS4Nj40ii/gG/7UdoSYwxjowCgo9EQxrpfdS1wA0AAGDgEHcgO8qshw/xN+IscnG9tp6SfCjqp2hheHXrMhO6EB8Wr43Rz/qX2fSe+TbW0m8MlepMdvBVxCJTDHv/vkNulqs3fnaGIpJmqnWnOksiKKVIAoAkcoLR+fEGMWK3OfYJ5SWsJ2XlfVVOtmGFso+tP53AaOzbuMewqt4+Tj9pP0aH0lrJ/87nG1Elpa5cPufiDvTCUJWUGvM4cDkAAOSOf+M3WO+ZgJOzAAAAAElFTkSuQmCC" />
@@ -28,6 +28,8 @@
             --n_psychologie: #f2b3c7;
             
             --n_socioeconomie: #85B0DB;
+            
+            --n_personne: #479a1b;
             
             --n_undefined: #858585;
             
@@ -1101,6 +1103,12 @@ article#credits h1.metas-title {
                 </label>
                 
                 <label class="filter">
+                    <input type="checkbox" name="PERSONNE">
+                    <span class="label" style="color: var(--n_personne);">PERSONNE</span>
+                    <span class="badge">32</span>
+                </label>
+                
+                <label class="filter">
                     <input type="checkbox" name="PSYCHOLOGIE">
                     <span class="label" style="color: var(--n_psychologie);">PSYCHOLOGIE</span>
                     <span class="badge">3</span>
@@ -1128,7 +1136,7 @@ article#credits h1.metas-title {
                 <label class="btn" style="order: 1">
                     <input type="checkbox" name="terminology">
                     <span class="label">terminology</span>
-                    <span class="badge">30</span>
+                    <span class="badge">62</span>
                 </label>
                 
             </form>
@@ -1138,7 +1146,7 @@ article#credits h1.metas-title {
         <details class="menu-index" id="index">
             <summary class="menu-title">
                 Index
-                <span id="index-counter" class="badge">30</span>
+                <span id="index-counter" class="badge">62</span>
             </summary>
 
             <select class="sorting-select" name="index_sorting">
@@ -1150,213 +1158,437 @@ article#credits h1.metas-title {
 
             <ul class="menu-index-list">
                 
-                <li data-index="20250904240081" style="order: 1">
-                    <a href="#20250904240081">
-                        <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
-                        <span>autoritarisme numérique</span>
-                    </a>
-                </li>
-                
-                <li data-index="20250904240074" style="order: 2">
-                    <a href="#20250904240074">
+                <li data-index="20250905240893" style="order: 1">
+                    <a href="#20250905240893">
                         <span class="record-type-point" style="color: var(--n_socioeconomie);">⬤</span>
                         <span>économie de la transe</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240065" style="order: 3">
-                    <a href="#20250904240065">
+                <li data-index="20250905240884" style="order: 2">
+                    <a href="#20250905240884">
                         <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
                         <span>hypernormalisation</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240075" style="order: 4">
-                    <a href="#20250904240075">
+                <li data-index="20250905240894" style="order: 3">
+                    <a href="#20250905240894">
                         <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
                         <span>hypnocratie</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240080" style="order: 5">
-                    <a href="#20250904240080">
+                <li data-index="20250905240899" style="order: 4">
+                    <a href="#20250905240899">
                         <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
                         <span>oligarque de la Silicon Valley</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240076" style="order: 6">
-                    <a href="#20250904240076">
+                <li data-index="20250905240895" style="order: 5">
+                    <a href="#20250905240895">
                         <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
                         <span>prédateur</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240082" style="order: 7">
-                    <a href="#20250904240082">
-                        <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
-                        <span>soumission</span>
-                    </a>
-                </li>
-                
-                <li data-index="20250904240079" style="order: 8">
-                    <a href="#20250904240079">
+                <li data-index="20250905240898" style="order: 6">
+                    <a href="#20250905240898">
                         <span class="record-type-point" style="color: var(--n_geopolitique);">⬤</span>
                         <span>souveraineté numérique</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240077" style="order: 9">
-                    <a href="#20250904240077">
+                <li data-index="20250905240896" style="order: 7">
+                    <a href="#20250905240896">
                         <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
                         <span>techno-optimisme</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240078" style="order: 10">
-                    <a href="#20250904240078">
+                <li data-index="20250905240897" style="order: 8">
+                    <a href="#20250905240897">
                         <span class="record-type-point" style="color: var(--n_geopolitique);">⬤</span>
                         <span>vassalisation heureuse</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240083" style="order: 11">
-                    <a href="#20250904240083">
-                        <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
-                        <span>vaincre la mort</span>
-                    </a>
-                </li>
-                
-                <li data-index="20250904240092" style="order: 12">
-                    <a href="#20250904240092">
+                <li data-index="20250905240911" style="order: 9">
+                    <a href="#20250905240911">
                         <span class="record-type-point" style="color: var(--n_socioeconomie);">⬤</span>
                         <span>accélérationnisme</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240091" style="order: 13">
-                    <a href="#20250904240091">
+                <li data-index="20250905240910" style="order: 10">
+                    <a href="#20250905240910">
                         <span class="record-type-point" style="color: var(--n_socioeconomie);">⬤</span>
                         <span>aggiornamento schmittien</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240070" style="order: 14">
-                    <a href="#20250904240070">
-                        <span class="record-type-point" style="color: var(--n_psychologie);">⬤</span>
-                        <span>architecture de la suggestion</span>
+                <li data-index="20250905240914" style="order: 11">
+                    <a href="#20250905240914">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Antti Revonsuo</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240087" style="order: 15">
-                    <a href="#20250904240087">
+                <li data-index="20250905240900" style="order: 12">
+                    <a href="#20250905240900">
+                        <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
+                        <span>autoritarisme numérique</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240906" style="order: 13">
+                    <a href="#20250905240906">
                         <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
                         <span>chaos</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240067" style="order: 16">
-                    <a href="#20250904240067">
+                <li data-index="20250905240886" style="order: 14">
+                    <a href="#20250905240886">
                         <span class="record-type-point" style="color: var(--n_geopolitique);">⬤</span>
                         <span>colonisation culturelle</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240084" style="order: 17">
-                    <a href="#20250904240084">
+                <li data-index="20250905240903" style="order: 15">
+                    <a href="#20250905240903">
                         <span class="record-type-point" style="color: var(--n_geopolitique);">⬤</span>
                         <span>colonisation de l&#39;univers</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240090" style="order: 18">
-                    <a href="#20250904240090">
+                <li data-index="20250905240909" style="order: 16">
+                    <a href="#20250905240909">
                         <span class="record-type-point" style="color: var(--n_socioeconomie);">⬤</span>
                         <span>complexe techno-industriel</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240089" style="order: 19">
-                    <a href="#20250904240089">
+                <li data-index="20250905240908" style="order: 17">
+                    <a href="#20250905240908">
                         <span class="record-type-point" style="color: var(--n_socioeconomie);">⬤</span>
                         <span>contrôle total de la population</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240085" style="order: 20">
-                    <a href="#20250904240085">
+                <li data-index="20250905240904" style="order: 18">
+                    <a href="#20250905240904">
                         <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
                         <span>déconstruction des institutions</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240069" style="order: 21">
-                    <a href="#20250904240069">
-                        <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
-                        <span>dispositif narratif</span>
-                    </a>
-                </li>
-                
-                <li data-index="20250904240066" style="order: 22">
-                    <a href="#20250904240066">
+                <li data-index="20250905240885" style="order: 19">
+                    <a href="#20250905240885">
                         <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
                         <span>hégémonie perceptuelle</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240072" style="order: 23">
-                    <a href="#20250904240072">
-                        <span class="record-type-point" style="color: var(--n_psychologie);">⬤</span>
-                        <span>hypnose probabiliste</span>
-                    </a>
-                </li>
-                
-                <li data-index="20250904240073" style="order: 24">
-                    <a href="#20250904240073">
-                        <span class="record-type-point" style="color: var(--n_psychologie);">⬤</span>
-                        <span>induction hypnotique</span>
-                    </a>
-                </li>
-                
-                <li data-index="20250904240071" style="order: 25">
-                    <a href="#20250904240071">
-                        <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
-                        <span>litératie hypnotique</span>
-                    </a>
-                </li>
-                
-                <li data-index="20250904240093" style="order: 26">
-                    <a href="#20250904240093">
+                <li data-index="20250905240912" style="order: 20">
+                    <a href="#20250905240912">
                         <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
                         <span>machine algorithmique</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240088" style="order: 27">
-                    <a href="#20250904240088">
+                <li data-index="20250905240907" style="order: 21">
+                    <a href="#20250905240907">
                         <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
                         <span>mouvement néoréactionnaire</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240086" style="order: 28">
-                    <a href="#20250904240086">
+                <li data-index="20250905240905" style="order: 22">
+                    <a href="#20250905240905">
                         <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
                         <span>Somalie numérique</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240068" style="order: 29">
-                    <a href="#20250904240068">
+                <li data-index="20250905240901" style="order: 23">
+                    <a href="#20250905240901">
+                        <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
+                        <span>soumission</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240913" style="order: 24">
+                    <a href="#20250905240913">
+                        <span class="record-type-point" style="color: var(--n_geopolitique);">⬤</span>
+                        <span>technocésarisme</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240902" style="order: 25">
+                    <a href="#20250905240902">
+                        <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
+                        <span>vaincre la mort</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240921" style="order: 26">
+                    <a href="#20250905240921">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Adam Curtis</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240917" style="order: 27">
+                    <a href="#20250905240917">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Adam Tooze</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240918" style="order: 28">
+                    <a href="#20250905240918">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Adam Tooze</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240926" style="order: 29">
+                    <a href="#20250905240926">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Andre Wilkens</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240924" style="order: 30">
+                    <a href="#20250905240924">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Gale L. Pooley</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240925" style="order: 31">
+                    <a href="#20250905240925">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>George Gilder</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240927" style="order: 32">
+                    <a href="#20250905240927">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Gilles Gressani</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240916" style="order: 33">
+                    <a href="#20250905240916">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Giuliano Empoli</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240920" style="order: 34">
+                    <a href="#20250905240920">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Jianwei Xun</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240919" style="order: 35">
+                    <a href="#20250905240919">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Katharine Jackson</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240922" style="order: 36">
+                    <a href="#20250905240922">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Marc Andreessen</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240923" style="order: 37">
+                    <a href="#20250905240923">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Marian L. Tupy</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240915" style="order: 38">
+                    <a href="#20250905240915">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Stephen LaBerge</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240887" style="order: 39">
+                    <a href="#20250905240887">
                         <span class="record-type-point" style="color: var(--n_geopolitique);">⬤</span>
                         <span>système de réalités concurrentes</span>
                     </a>
                 </li>
                 
-                <li data-index="20250904240094" style="order: 30">
-                    <a href="#20250904240094">
-                        <span class="record-type-point" style="color: var(--n_geopolitique);">⬤</span>
-                        <span>technocésarisme</span>
+                <li data-index="20250905240928" style="order: 40">
+                    <a href="#20250905240928">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>William D. Nordhaus</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240889" style="order: 41">
+                    <a href="#20250905240889">
+                        <span class="record-type-point" style="color: var(--n_psychologie);">⬤</span>
+                        <span>architecture de la suggestion</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240938" style="order: 42">
+                    <a href="#20250905240938">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Calestous Juma</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240943" style="order: 43">
+                    <a href="#20250905240943">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Curtis Yarvin</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240937" style="order: 44">
+                    <a href="#20250905240937">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Deirdre N. McCloskey</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240888" style="order: 45">
+                    <a href="#20250905240888">
+                        <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
+                        <span>dispositif narratif</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240940" style="order: 46">
+                    <a href="#20250905240940">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Evgeny Morozov</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240891" style="order: 47">
+                    <a href="#20250905240891">
+                        <span class="record-type-point" style="color: var(--n_psychologie);">⬤</span>
+                        <span>hypnose probabiliste</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240892" style="order: 48">
+                    <a href="#20250905240892">
+                        <span class="record-type-point" style="color: var(--n_psychologie);">⬤</span>
+                        <span>induction hypnotique</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240932" style="order: 49">
+                    <a href="#20250905240932">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>James P. Carse</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240933" style="order: 50">
+                    <a href="#20250905240933">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Julian Lincoln Simon</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240890" style="order: 51">
+                    <a href="#20250905240890">
+                        <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
+                        <span>litératie hypnotique</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240929" style="order: 52">
+                    <a href="#20250905240929">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Mark Fisher</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240939" style="order: 53">
+                    <a href="#20250905240939">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Martin Gurri</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240942" style="order: 54">
+                    <a href="#20250905240942">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Neven Sesardić</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240930" style="order: 55">
+                    <a href="#20250905240930">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Nick Land</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240935" style="order: 56">
+                    <a href="#20250905240935">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Paul Collier</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240944" style="order: 57">
+                    <a href="#20250905240944">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Peter Thiel</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240931" style="order: 58">
+                    <a href="#20250905240931">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Ray Brassier</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240936" style="order: 59">
+                    <a href="#20250905240936">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Ray Kurzweil</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240945" style="order: 60">
+                    <a href="#20250905240945">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Sam Altman</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240934" style="order: 61">
+                    <a href="#20250905240934">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Thomas Sowell</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250905240941" style="order: 62">
+                    <a href="#20250905240941">
+                        <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                        <span>Virginia Postrel</span>
                     </a>
                 </li>
                 
@@ -1401,7 +1633,7 @@ article#credits h1.metas-title {
                     <label>
                         <input type="checkbox" checked onchange="linksDisplayToggle(this.checked)">
                         Display links
-                        <span class="badge">0</span>
+                        <span class="badge">1</span>
                     </label>
                 </li>
                 <li>
@@ -1511,48 +1743,7 @@ article#credits h1.metas-title {
         </button>
 
         
-        <article id="20250904240081" class="record">
-            <header>
-                <h1 class="record-title">autoritarisme numérique</h1>
-
-                
-
-                <div class="record-id">
-                    <span>id :</span>
-                    <span>20250904240081</span>
-                </div>
-
-                <div class="record-type">
-                    <span>types :</span>
-                    <span>POLITIQUE</span>
-                </div>
-
-                
-                <div class="record-tags">
-                    <span>keywords :</span>
-                    
-                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
-                    
-                </div>
-                
-
-                
-            </header>
-
-            <main class="record-content">
-                
-
-                
-            </main>
-
-            <footer class="list-content-container">
-                
-
-                
-            </footer>
-        </article>
-        
-        <article id="20250904240074" class="record">
+        <article id="20250905240893" class="record">
             <header>
                 <h1 class="record-title">économie de la transe</h1>
 
@@ -1560,7 +1751,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240074</span>
+                    <span>20250905240893</span>
                 </div>
 
                 <div class="record-type">
@@ -1593,7 +1784,7 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240065" class="record">
+        <article id="20250905240884" class="record">
             <header>
                 <h1 class="record-title">hypernormalisation</h1>
 
@@ -1601,7 +1792,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240065</span>
+                    <span>20250905240884</span>
                 </div>
 
                 <div class="record-type">
@@ -1622,19 +1813,51 @@ article#credits h1.metas-title {
             </header>
 
             <main class="record-content">
-                
+                <p><a href="https://fr.wikipedia.org/wiki/HyperNormalisation">HyperNormalisation</a> est un film documentaire britannique réalisé par <a href="#20250905240921" title="Adam Curtis" class="record-link">Adam Curtis</a>, sorti en 2016.<br>Dans le film (Curtis 2016), Curtis avance que depuis les années 1970, les gouvernements, la finance et les utopistes technologiques ont abandonné la complexité du « monde réel » et ont construit un simple « monde factice » qui est géré par les entreprises et maintenu stable par les politiciens.</p>
 
+
+                
+                <section class="bibliography">
+                    <hr/>
+                    <h1>Bibliography</h1>
+
+                      <div class="csl-entry">Curtis, Adam. 2016. « Hypernormalisation ». <a href="https://www.filmsforaction.org/watch/hypernormalisation/.</div>">https://www.filmsforaction.org/watch/hypernormalisation/.</div></a>
+
+
+                </section>
                 
             </main>
 
             <footer class="list-content-container">
+                
+                <details class="record-links" open="open">
+                    <summary class="menu-title">
+                        links
+                        <span class="badge">1</span>
+                    </summary>
+
+                    <ul class="record-links-list">
+                        
+                        <li data-target-id="20250905240921">
+                            <a href="#20250905240921">
+                                <span class="record-type-point" style="color: var(--n_personne);">⬤</span>
+                                <span>Adam Curtis</span>
+                                <div class="record-links-context">
+                                    <p><a href="https://fr.wikipedia.org/wiki/HyperNormalisation">HyperNormalisation</a> est un film documentaire britannique réalisé par <em class="id-context" data-target-id="20250905240921">Adam Curtis</em>, sorti en 2016.<br>Dans le film (Curtis 2016), Curtis avance que depuis les années 1970, les gouvernements, la finance et les utopistes technologiques ont abandonné la complexité du « monde réel » et ont construit un simple « monde factice » qui est géré par les entreprises et maintenu stable par les politiciens.</p>
+
+                                </div>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </details>
                 
 
                 
             </footer>
         </article>
         
-        <article id="20250904240075" class="record">
+        <article id="20250905240894" class="record">
             <header>
                 <h1 class="record-title">hypnocratie</h1>
 
@@ -1642,7 +1865,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240075</span>
+                    <span>20250905240894</span>
                 </div>
 
                 <div class="record-type">
@@ -1675,7 +1898,7 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240080" class="record">
+        <article id="20250905240899" class="record">
             <header>
                 <h1 class="record-title">oligarque de la Silicon Valley</h1>
 
@@ -1683,7 +1906,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240080</span>
+                    <span>20250905240899</span>
                 </div>
 
                 <div class="record-type">
@@ -1716,7 +1939,7 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240076" class="record">
+        <article id="20250905240895" class="record">
             <header>
                 <h1 class="record-title">prédateur</h1>
 
@@ -1724,7 +1947,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240076</span>
+                    <span>20250905240895</span>
                 </div>
 
                 <div class="record-type">
@@ -1757,48 +1980,7 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240082" class="record">
-            <header>
-                <h1 class="record-title">soumission</h1>
-
-                
-
-                <div class="record-id">
-                    <span>id :</span>
-                    <span>20250904240082</span>
-                </div>
-
-                <div class="record-type">
-                    <span>types :</span>
-                    <span>POLITIQUE</span>
-                </div>
-
-                
-                <div class="record-tags">
-                    <span>keywords :</span>
-                    
-                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
-                    
-                </div>
-                
-
-                
-            </header>
-
-            <main class="record-content">
-                
-
-                
-            </main>
-
-            <footer class="list-content-container">
-                
-
-                
-            </footer>
-        </article>
-        
-        <article id="20250904240079" class="record">
+        <article id="20250905240898" class="record">
             <header>
                 <h1 class="record-title">souveraineté numérique</h1>
 
@@ -1806,7 +1988,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240079</span>
+                    <span>20250905240898</span>
                 </div>
 
                 <div class="record-type">
@@ -1839,7 +2021,7 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240077" class="record">
+        <article id="20250905240896" class="record">
             <header>
                 <h1 class="record-title">techno-optimisme</h1>
 
@@ -1847,7 +2029,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240077</span>
+                    <span>20250905240896</span>
                 </div>
 
                 <div class="record-type">
@@ -1880,7 +2062,7 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240078" class="record">
+        <article id="20250905240897" class="record">
             <header>
                 <h1 class="record-title">vassalisation heureuse</h1>
 
@@ -1888,7 +2070,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240078</span>
+                    <span>20250905240897</span>
                 </div>
 
                 <div class="record-type">
@@ -1921,48 +2103,7 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240083" class="record">
-            <header>
-                <h1 class="record-title">vaincre la mort</h1>
-
-                
-
-                <div class="record-id">
-                    <span>id :</span>
-                    <span>20250904240083</span>
-                </div>
-
-                <div class="record-type">
-                    <span>types :</span>
-                    <span>POLITIQUE</span>
-                </div>
-
-                
-                <div class="record-tags">
-                    <span>keywords :</span>
-                    
-                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
-                    
-                </div>
-                
-
-                
-            </header>
-
-            <main class="record-content">
-                
-
-                
-            </main>
-
-            <footer class="list-content-container">
-                
-
-                
-            </footer>
-        </article>
-        
-        <article id="20250904240092" class="record">
+        <article id="20250905240911" class="record">
             <header>
                 <h1 class="record-title">accélérationnisme</h1>
 
@@ -1970,7 +2111,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240092</span>
+                    <span>20250905240911</span>
                 </div>
 
                 <div class="record-type">
@@ -2003,7 +2144,7 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240091" class="record">
+        <article id="20250905240910" class="record">
             <header>
                 <h1 class="record-title">aggiornamento schmittien</h1>
 
@@ -2011,7 +2152,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240091</span>
+                    <span>20250905240910</span>
                 </div>
 
                 <div class="record-type">
@@ -2044,20 +2185,20 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240070" class="record">
+        <article id="20250905240914" class="record">
             <header>
-                <h1 class="record-title">architecture de la suggestion</h1>
+                <h1 class="record-title">Antti Revonsuo</h1>
 
                 
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240070</span>
+                    <span>20250905240914</span>
                 </div>
 
                 <div class="record-type">
                     <span>types :</span>
-                    <span>PSYCHOLOGIE</span>
+                    <span>PERSONNE</span>
                 </div>
 
                 
@@ -2085,7 +2226,48 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240087" class="record">
+        <article id="20250905240900" class="record">
+            <header>
+                <h1 class="record-title">autoritarisme numérique</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240900</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>POLITIQUE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240906" class="record">
             <header>
                 <h1 class="record-title">chaos</h1>
 
@@ -2093,7 +2275,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240087</span>
+                    <span>20250905240906</span>
                 </div>
 
                 <div class="record-type">
@@ -2126,7 +2308,7 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240067" class="record">
+        <article id="20250905240886" class="record">
             <header>
                 <h1 class="record-title">colonisation culturelle</h1>
 
@@ -2134,7 +2316,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240067</span>
+                    <span>20250905240886</span>
                 </div>
 
                 <div class="record-type">
@@ -2167,7 +2349,7 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240084" class="record">
+        <article id="20250905240903" class="record">
             <header>
                 <h1 class="record-title">colonisation de l&#39;univers</h1>
 
@@ -2175,7 +2357,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240084</span>
+                    <span>20250905240903</span>
                 </div>
 
                 <div class="record-type">
@@ -2208,7 +2390,7 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240090" class="record">
+        <article id="20250905240909" class="record">
             <header>
                 <h1 class="record-title">complexe techno-industriel</h1>
 
@@ -2216,7 +2398,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240090</span>
+                    <span>20250905240909</span>
                 </div>
 
                 <div class="record-type">
@@ -2249,7 +2431,7 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240089" class="record">
+        <article id="20250905240908" class="record">
             <header>
                 <h1 class="record-title">contrôle total de la population</h1>
 
@@ -2257,7 +2439,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240089</span>
+                    <span>20250905240908</span>
                 </div>
 
                 <div class="record-type">
@@ -2290,7 +2472,7 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240085" class="record">
+        <article id="20250905240904" class="record">
             <header>
                 <h1 class="record-title">déconstruction des institutions</h1>
 
@@ -2298,7 +2480,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240085</span>
+                    <span>20250905240904</span>
                 </div>
 
                 <div class="record-type">
@@ -2331,48 +2513,7 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240069" class="record">
-            <header>
-                <h1 class="record-title">dispositif narratif</h1>
-
-                
-
-                <div class="record-id">
-                    <span>id :</span>
-                    <span>20250904240069</span>
-                </div>
-
-                <div class="record-type">
-                    <span>types :</span>
-                    <span>POLITIQUE</span>
-                </div>
-
-                
-                <div class="record-tags">
-                    <span>keywords :</span>
-                    
-                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
-                    
-                </div>
-                
-
-                
-            </header>
-
-            <main class="record-content">
-                
-
-                
-            </main>
-
-            <footer class="list-content-container">
-                
-
-                
-            </footer>
-        </article>
-        
-        <article id="20250904240066" class="record">
+        <article id="20250905240885" class="record">
             <header>
                 <h1 class="record-title">hégémonie perceptuelle</h1>
 
@@ -2380,7 +2521,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240066</span>
+                    <span>20250905240885</span>
                 </div>
 
                 <div class="record-type">
@@ -2413,130 +2554,7 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240072" class="record">
-            <header>
-                <h1 class="record-title">hypnose probabiliste</h1>
-
-                
-
-                <div class="record-id">
-                    <span>id :</span>
-                    <span>20250904240072</span>
-                </div>
-
-                <div class="record-type">
-                    <span>types :</span>
-                    <span>PSYCHOLOGIE</span>
-                </div>
-
-                
-                <div class="record-tags">
-                    <span>keywords :</span>
-                    
-                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
-                    
-                </div>
-                
-
-                
-            </header>
-
-            <main class="record-content">
-                
-
-                
-            </main>
-
-            <footer class="list-content-container">
-                
-
-                
-            </footer>
-        </article>
-        
-        <article id="20250904240073" class="record">
-            <header>
-                <h1 class="record-title">induction hypnotique</h1>
-
-                
-
-                <div class="record-id">
-                    <span>id :</span>
-                    <span>20250904240073</span>
-                </div>
-
-                <div class="record-type">
-                    <span>types :</span>
-                    <span>PSYCHOLOGIE</span>
-                </div>
-
-                
-                <div class="record-tags">
-                    <span>keywords :</span>
-                    
-                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
-                    
-                </div>
-                
-
-                
-            </header>
-
-            <main class="record-content">
-                
-
-                
-            </main>
-
-            <footer class="list-content-container">
-                
-
-                
-            </footer>
-        </article>
-        
-        <article id="20250904240071" class="record">
-            <header>
-                <h1 class="record-title">litératie hypnotique</h1>
-
-                
-
-                <div class="record-id">
-                    <span>id :</span>
-                    <span>20250904240071</span>
-                </div>
-
-                <div class="record-type">
-                    <span>types :</span>
-                    <span>POLITIQUE</span>
-                </div>
-
-                
-                <div class="record-tags">
-                    <span>keywords :</span>
-                    
-                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
-                    
-                </div>
-                
-
-                
-            </header>
-
-            <main class="record-content">
-                
-
-                
-            </main>
-
-            <footer class="list-content-container">
-                
-
-                
-            </footer>
-        </article>
-        
-        <article id="20250904240093" class="record">
+        <article id="20250905240912" class="record">
             <header>
                 <h1 class="record-title">machine algorithmique</h1>
 
@@ -2544,7 +2562,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240093</span>
+                    <span>20250905240912</span>
                 </div>
 
                 <div class="record-type">
@@ -2577,7 +2595,7 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240088" class="record">
+        <article id="20250905240907" class="record">
             <header>
                 <h1 class="record-title">mouvement néoréactionnaire</h1>
 
@@ -2585,7 +2603,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240088</span>
+                    <span>20250905240907</span>
                 </div>
 
                 <div class="record-type">
@@ -2618,7 +2636,7 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240086" class="record">
+        <article id="20250905240905" class="record">
             <header>
                 <h1 class="record-title">Somalie numérique</h1>
 
@@ -2626,7 +2644,7 @@ article#credits h1.metas-title {
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240086</span>
+                    <span>20250905240905</span>
                 </div>
 
                 <div class="record-type">
@@ -2659,15 +2677,56 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240068" class="record">
+        <article id="20250905240901" class="record">
             <header>
-                <h1 class="record-title">système de réalités concurrentes</h1>
+                <h1 class="record-title">soumission</h1>
 
                 
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240068</span>
+                    <span>20250905240901</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>POLITIQUE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240913" class="record">
+            <header>
+                <h1 class="record-title">technocésarisme</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240913</span>
                 </div>
 
                 <div class="record-type">
@@ -2700,20 +2759,1569 @@ article#credits h1.metas-title {
             </footer>
         </article>
         
-        <article id="20250904240094" class="record">
+        <article id="20250905240902" class="record">
             <header>
-                <h1 class="record-title">technocésarisme</h1>
+                <h1 class="record-title">vaincre la mort</h1>
 
                 
 
                 <div class="record-id">
                     <span>id :</span>
-                    <span>20250904240094</span>
+                    <span>20250905240902</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>POLITIQUE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240921" class="record">
+            <header>
+                <h1 class="record-title">Adam Curtis</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240921</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                <p><a href="https://fr.wikipedia.org/wiki/Adam_Curtis">Adam Curtis</a>, né le 26 mai 1955, est un documentariste britannique de télévision qui a travaillé comme scénariste, narrateur, producteur et réalisateur (cf. (Curtis 2016)).</p>
+
+
+                
+                <section class="bibliography">
+                    <hr/>
+                    <h1>Bibliography</h1>
+
+                      <div class="csl-entry">Curtis, Adam. 2016. « Hypernormalisation ». <a href="https://www.filmsforaction.org/watch/hypernormalisation/.</div>">https://www.filmsforaction.org/watch/hypernormalisation/.</div></a>
+
+
+                </section>
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+                <details class="record-backlinks" open="open">
+                    <summary class="menu-title">
+                        backlinks
+                        <span class="badge">1</span>
+                    </summary>
+
+                    <ul class="record-backlinks-list">
+                        
+                        <li data-target-id="20250905240884">
+                            <a href="#20250905240884">
+                                <span class="record-type-point" style="color: var(--n_politique);">⬤</span>
+                                <span>hypernormalisation</span>
+                                <div class="record-links-context">
+                                    <p><a href="https://fr.wikipedia.org/wiki/HyperNormalisation">HyperNormalisation</a> est un film documentaire britannique réalisé par <em class="id-context" data-target-id="20250905240921">Adam Curtis</em>, sorti en 2016.<br>Dans le film (Curtis 2016), Curtis avance que depuis les années 1970, les gouvernements, la finance et les utopistes technologiques ont abandonné la complexité du « monde réel » et ont construit un simple « monde factice » qui est géré par les entreprises et maintenu stable par les politiciens.</p>
+
+                                </div>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </details>
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240917" class="record">
+            <header>
+                <h1 class="record-title">Adam Tooze</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240917</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240918" class="record">
+            <header>
+                <h1 class="record-title">Adam Tooze</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240918</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240926" class="record">
+            <header>
+                <h1 class="record-title">Andre Wilkens</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240926</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240924" class="record">
+            <header>
+                <h1 class="record-title">Gale L. Pooley</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240924</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240925" class="record">
+            <header>
+                <h1 class="record-title">George Gilder</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240925</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240927" class="record">
+            <header>
+                <h1 class="record-title">Gilles Gressani</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240927</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240916" class="record">
+            <header>
+                <h1 class="record-title">Giuliano Empoli</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240916</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240920" class="record">
+            <header>
+                <h1 class="record-title">Jianwei Xun</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240920</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240919" class="record">
+            <header>
+                <h1 class="record-title">Katharine Jackson</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240919</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240922" class="record">
+            <header>
+                <h1 class="record-title">Marc Andreessen</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240922</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240923" class="record">
+            <header>
+                <h1 class="record-title">Marian L. Tupy</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240923</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240915" class="record">
+            <header>
+                <h1 class="record-title">Stephen LaBerge</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240915</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240887" class="record">
+            <header>
+                <h1 class="record-title">système de réalités concurrentes</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240887</span>
                 </div>
 
                 <div class="record-type">
                     <span>types :</span>
                     <span>GÉOPOLITIQUE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240928" class="record">
+            <header>
+                <h1 class="record-title">William D. Nordhaus</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240928</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240889" class="record">
+            <header>
+                <h1 class="record-title">architecture de la suggestion</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240889</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PSYCHOLOGIE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240938" class="record">
+            <header>
+                <h1 class="record-title">Calestous Juma</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240938</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240943" class="record">
+            <header>
+                <h1 class="record-title">Curtis Yarvin</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240943</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240937" class="record">
+            <header>
+                <h1 class="record-title">Deirdre N. McCloskey</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240937</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240888" class="record">
+            <header>
+                <h1 class="record-title">dispositif narratif</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240888</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>POLITIQUE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240940" class="record">
+            <header>
+                <h1 class="record-title">Evgeny Morozov</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240940</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240891" class="record">
+            <header>
+                <h1 class="record-title">hypnose probabiliste</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240891</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PSYCHOLOGIE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240892" class="record">
+            <header>
+                <h1 class="record-title">induction hypnotique</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240892</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PSYCHOLOGIE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240932" class="record">
+            <header>
+                <h1 class="record-title">James P. Carse</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240932</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240933" class="record">
+            <header>
+                <h1 class="record-title">Julian Lincoln Simon</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240933</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240890" class="record">
+            <header>
+                <h1 class="record-title">litératie hypnotique</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240890</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>POLITIQUE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240929" class="record">
+            <header>
+                <h1 class="record-title">Mark Fisher</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240929</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240939" class="record">
+            <header>
+                <h1 class="record-title">Martin Gurri</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240939</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240942" class="record">
+            <header>
+                <h1 class="record-title">Neven Sesardić</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240942</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240930" class="record">
+            <header>
+                <h1 class="record-title">Nick Land</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240930</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240935" class="record">
+            <header>
+                <h1 class="record-title">Paul Collier</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240935</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240944" class="record">
+            <header>
+                <h1 class="record-title">Peter Thiel</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240944</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240931" class="record">
+            <header>
+                <h1 class="record-title">Ray Brassier</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240931</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240936" class="record">
+            <header>
+                <h1 class="record-title">Ray Kurzweil</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240936</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240945" class="record">
+            <header>
+                <h1 class="record-title">Sam Altman</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240945</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240934" class="record">
+            <header>
+                <h1 class="record-title">Thomas Sowell</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240934</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
+                </div>
+
+                
+                <div class="record-tags">
+                    <span>keywords :</span>
+                    
+                    <button class="btn" onclick="activeTag('terminology');">terminology</button>
+                    
+                </div>
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+            </footer>
+        </article>
+        
+        <article id="20250905240941" class="record">
+            <header>
+                <h1 class="record-title">Virginia Postrel</h1>
+
+                
+
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250905240941</span>
+                </div>
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>PERSONNE</span>
                 </div>
 
                 
@@ -2897,7 +4505,7 @@ article#credits h1.metas-title {
     
                 <button>Download</button>
     
-                <code>[]</code>
+                <code>[{&quot;id&quot;:&quot;AdamCurtis2016&quot;,&quot;author&quot;:[{&quot;given&quot;:&quot;Adam&quot;,&quot;family&quot;:&quot;Curtis&quot;}],&quot;type&quot;:&quot;document&quot;,&quot;citation-key&quot;:&quot;AdamCurtis2016&quot;,&quot;issued&quot;:{&quot;date-parts&quot;:[[2016]]},&quot;title&quot;:&quot;Hypernormalisation&quot;,&quot;URL&quot;:&quot;https://www.filmsforaction.org/watch/hypernormalisation/&quot;,&quot;used&quot;:true}]</code>
             </main>
         </article>
         
@@ -2947,13 +4555,13 @@ article#credits h1.metas-title {
             </label>
 
             <form id="timeline-form">
-                <output name="timeline_output">9/4/2025</output>
+                <output name="timeline_output">9/5/2025</output>
                 <input
                     type="range"
                     name="timeline_range"
-                    min="1756987425.858"
-                    max="1756987425.876"
-                    value="1756987425.858"
+                    min="1757091686.788"
+                    max="1757091686.835"
+                    value="1757091686.788"
                     list="timeline-ticks"
                 >
                 <datalist id="timeline-ticks"></datalist>
@@ -2965,12 +4573,12 @@ article#credits h1.metas-title {
     
 
     <script>
-        const data = {"nodes":[{"id":"20250904240065","label":"hypernormalisation","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.858},{"id":"20250904240074","label":"économie de la transe","type":"SOCIOÉCONOMIE","fill":"#85D4DB","colorStroke":"#85B0DB","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.858},{"id":"20250904240075","label":"hypnocratie","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.858},{"id":"20250904240076","label":"prédateur","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.858},{"id":"20250904240077","label":"techno-optimisme","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.858},{"id":"20250904240078","label":"vassalisation heureuse","type":"GÉOPOLITIQUE","fill":"#9e4d66","colorStroke":"#9e4d66","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.858},{"id":"20250904240079","label":"souveraineté numérique","type":"GÉOPOLITIQUE","fill":"#9e4d66","colorStroke":"#9e4d66","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.858},{"id":"20250904240080","label":"oligarque de la Silicon Valley","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.858},{"id":"20250904240081","label":"autoritarisme numérique","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.858},{"id":"20250904240082","label":"soumission","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.858},{"id":"20250904240083","label":"vaincre la mort","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.874},{"id":"20250904240066","label":"hégémonie perceptuelle","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.876},{"id":"20250904240084","label":"colonisation de l'univers","type":"GÉOPOLITIQUE","fill":"#9e4d66","colorStroke":"#9e4d66","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.876},{"id":"20250904240085","label":"déconstruction des institutions","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.876},{"id":"20250904240086","label":"Somalie numérique","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.876},{"id":"20250904240087","label":"chaos","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.876},{"id":"20250904240088","label":"mouvement néoréactionnaire","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.876},{"id":"20250904240089","label":"contrôle total de la population","type":"SOCIOÉCONOMIE","fill":"#85D4DB","colorStroke":"#85B0DB","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.876},{"id":"20250904240090","label":"complexe techno-industriel","type":"SOCIOÉCONOMIE","fill":"#85D4DB","colorStroke":"#85B0DB","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.876},{"id":"20250904240091","label":"aggiornamento schmittien","type":"SOCIOÉCONOMIE","fill":"#85D4DB","colorStroke":"#85B0DB","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.876},{"id":"20250904240092","label":"accélérationnisme","type":"SOCIOÉCONOMIE","fill":"#85D4DB","colorStroke":"#85B0DB","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.876},{"id":"20250904240093","label":"machine algorithmique","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.876},{"id":"20250904240067","label":"colonisation culturelle","type":"GÉOPOLITIQUE","fill":"#9e4d66","colorStroke":"#9e4d66","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.876},{"id":"20250904240094","label":"technocésarisme","type":"GÉOPOLITIQUE","fill":"#9e4d66","colorStroke":"#9e4d66","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.876},{"id":"20250904240068","label":"système de réalités concurrentes","type":"GÉOPOLITIQUE","fill":"#9e4d66","colorStroke":"#9e4d66","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.876},{"id":"20250904240069","label":"dispositif narratif","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.876},{"id":"20250904240070","label":"architecture de la suggestion","type":"PSYCHOLOGIE","fill":"#f2b3c7","colorStroke":"#f2b3c7","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.876},{"id":"20250904240071","label":"litératie hypnotique","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.876},{"id":"20250904240072","label":"hypnose probabiliste","type":"PSYCHOLOGIE","fill":"#f2b3c7","colorStroke":"#f2b3c7","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.876},{"id":"20250904240073","label":"induction hypnotique","type":"PSYCHOLOGIE","fill":"#f2b3c7","colorStroke":"#f2b3c7","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1756987425.876}],"links":[]};
-        const graphProperties = {"select_origin":"directory","files_origin":"C:\\Users\\chauv\\Documents\\TERMINOLOGY\\out","nodes_origin":"","links_origin":"","nodes_online":"","links_online":"","images_origin":"","export_target":"","history":false,"focus_max":2,"record_types":{"POLITIQUE":{"fill":"#451322","stroke":"#451322"},"GÉOPOLITIQUE":{"fill":"#9e4d66","stroke":"#9e4d66"},"PSYCHOLOGIE":{"fill":"#f2b3c7","stroke":"#f2b3c7"},"SOCIOÉCONOMIE":{"fill":"#85D4DB","stroke":"#85B0DB"},"undefined":{"fill":"#858585","stroke":"#858585"}},"link_types":{"undefined":{"stroke":"simple","color":"#e1e1e1"}},"record_filters":[],"graph_background_color":"#ffffff","graph_highlight_color":"#ff6a6a","graph_highlight_on_hover":true,"graph_text_size":10,"graph_arrows":true,"node_size_method":"degree","node_size":10,"node_size_max":20,"node_size_min":2,"attraction_force":200,"attraction_distance_max":250,"attraction_vertical":0,"attraction_horizontal":0,"views":{},"chronological_record_meta":"created","record_metas":[],"title":"Grand Continent","author":"jmc","description":"Vol. IV (2025)","keywords":[],"link_symbol":"![](Icon_External_Link.png)","csl":"style.csl","bibliography":"terminology.json","csl_locale":"locales-fr-FR.xml","css_custom":"","devtools":false,"lang":"en","name":""};
-        const tagList = [{"name":"terminology","nodes":["20250904240065","20250904240074","20250904240075","20250904240076","20250904240077","20250904240078","20250904240079","20250904240080","20250904240081","20250904240082","20250904240083","20250904240066","20250904240084","20250904240085","20250904240086","20250904240087","20250904240088","20250904240089","20250904240090","20250904240091","20250904240092","20250904240093","20250904240067","20250904240094","20250904240068","20250904240069","20250904240070","20250904240071","20250904240072","20250904240073"]}];
-        const typeList = {"POLITIQUE":{"nodes":["20250904240065","20250904240075","20250904240076","20250904240077","20250904240080","20250904240081","20250904240082","20250904240083","20250904240066","20250904240085","20250904240086","20250904240087","20250904240088","20250904240093","20250904240069","20250904240071"],"active":true},"SOCIOÉCONOMIE":{"nodes":["20250904240074","20250904240089","20250904240090","20250904240091","20250904240092"],"active":true},"GÉOPOLITIQUE":{"nodes":["20250904240078","20250904240079","20250904240084","20250904240067","20250904240094","20250904240068"],"active":true},"PSYCHOLOGIE":{"nodes":["20250904240070","20250904240072","20250904240073"],"active":true}};
-        const timeline = {"begin":1756987425.858,"end":1756987425.876};
-        const sorting = {"records":[{"alphabetical":3,"chronological":0},{"alphabetical":11,"chronological":1},{"alphabetical":13,"chronological":2},{"alphabetical":14,"chronological":3},{"alphabetical":20,"chronological":4},{"alphabetical":21,"chronological":5},{"alphabetical":23,"chronological":6},{"alphabetical":24,"chronological":7},{"alphabetical":26,"chronological":8},{"alphabetical":29,"chronological":9},{"alphabetical":28,"chronological":10},{"alphabetical":0,"chronological":11},{"alphabetical":1,"chronological":12},{"alphabetical":2,"chronological":13},{"alphabetical":4,"chronological":14},{"alphabetical":5,"chronological":15},{"alphabetical":6,"chronological":16},{"alphabetical":7,"chronological":17},{"alphabetical":8,"chronological":18},{"alphabetical":9,"chronological":19},{"alphabetical":10,"chronological":20},{"alphabetical":12,"chronological":21},{"alphabetical":15,"chronological":22},{"alphabetical":16,"chronological":23},{"alphabetical":17,"chronological":24},{"alphabetical":18,"chronological":25},{"alphabetical":19,"chronological":26},{"alphabetical":22,"chronological":27},{"alphabetical":25,"chronological":28},{"alphabetical":27,"chronological":29}],"tags":[{"alphabetical":0,"digital":0}]};
+        const data = {"nodes":[{"id":"20250905240884","label":"hypernormalisation","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1757091686.788},{"id":"20250905240893","label":"économie de la transe","type":"SOCIOÉCONOMIE","fill":"#85D4DB","colorStroke":"#85B0DB","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.788},{"id":"20250905240894","label":"hypnocratie","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.788},{"id":"20250905240895","label":"prédateur","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.788},{"id":"20250905240896","label":"techno-optimisme","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.788},{"id":"20250905240897","label":"vassalisation heureuse","type":"GÉOPOLITIQUE","fill":"#9e4d66","colorStroke":"#9e4d66","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.788},{"id":"20250905240898","label":"souveraineté numérique","type":"GÉOPOLITIQUE","fill":"#9e4d66","colorStroke":"#9e4d66","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.788},{"id":"20250905240899","label":"oligarque de la Silicon Valley","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.788},{"id":"20250905240900","label":"autoritarisme numérique","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.803},{"id":"20250905240901","label":"soumission","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.803},{"id":"20250905240902","label":"vaincre la mort","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.803},{"id":"20250905240885","label":"hégémonie perceptuelle","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.803},{"id":"20250905240903","label":"colonisation de l'univers","type":"GÉOPOLITIQUE","fill":"#9e4d66","colorStroke":"#9e4d66","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.803},{"id":"20250905240904","label":"déconstruction des institutions","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.803},{"id":"20250905240905","label":"Somalie numérique","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.803},{"id":"20250905240906","label":"chaos","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.803},{"id":"20250905240907","label":"mouvement néoréactionnaire","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.803},{"id":"20250905240908","label":"contrôle total de la population","type":"SOCIOÉCONOMIE","fill":"#85D4DB","colorStroke":"#85B0DB","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.803},{"id":"20250905240909","label":"complexe techno-industriel","type":"SOCIOÉCONOMIE","fill":"#85D4DB","colorStroke":"#85B0DB","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.803},{"id":"20250905240910","label":"aggiornamento schmittien","type":"SOCIOÉCONOMIE","fill":"#85D4DB","colorStroke":"#85B0DB","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.803},{"id":"20250905240911","label":"accélérationnisme","type":"SOCIOÉCONOMIE","fill":"#85D4DB","colorStroke":"#85B0DB","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.803},{"id":"20250905240912","label":"machine algorithmique","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.803},{"id":"20250905240886","label":"colonisation culturelle","type":"GÉOPOLITIQUE","fill":"#9e4d66","colorStroke":"#9e4d66","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.803},{"id":"20250905240913","label":"technocésarisme","type":"GÉOPOLITIQUE","fill":"#9e4d66","colorStroke":"#9e4d66","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.803},{"id":"20250905240914","label":"Antti Revonsuo","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.803},{"id":"20250905240915","label":"Stephen LaBerge","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.819},{"id":"20250905240916","label":"Giuliano Empoli","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.819},{"id":"20250905240917","label":"Adam Tooze","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.819},{"id":"20250905240918","label":"Adam Tooze","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.819},{"id":"20250905240919","label":"Katharine Jackson","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.819},{"id":"20250905240920","label":"Jianwei Xun","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.819},{"id":"20250905240921","label":"Adam Curtis","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":11,"strokeWidth":2,"begin":1757091686.819},{"id":"20250905240922","label":"Marc Andreessen","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.819},{"id":"20250905240887","label":"système de réalités concurrentes","type":"GÉOPOLITIQUE","fill":"#9e4d66","colorStroke":"#9e4d66","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.819},{"id":"20250905240923","label":"Marian L. Tupy","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.819},{"id":"20250905240924","label":"Gale L. Pooley","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.819},{"id":"20250905240925","label":"George Gilder","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.819},{"id":"20250905240926","label":"Andre Wilkens","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.819},{"id":"20250905240927","label":"Gilles Gressani","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.819},{"id":"20250905240928","label":"William D. Nordhaus","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.819},{"id":"20250905240929","label":"Mark Fisher","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240930","label":"Nick Land","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240931","label":"Ray Brassier","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240932","label":"James P. Carse","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240888","label":"dispositif narratif","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240933","label":"Julian Lincoln Simon","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240934","label":"Thomas Sowell","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240935","label":"Paul Collier","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240936","label":"Ray Kurzweil","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240937","label":"Deirdre N. McCloskey","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240938","label":"Calestous Juma","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240939","label":"Martin Gurri","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240940","label":"Evgeny Morozov","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240941","label":"Virginia Postrel","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240942","label":"Neven Sesardić","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240889","label":"architecture de la suggestion","type":"PSYCHOLOGIE","fill":"#f2b3c7","colorStroke":"#f2b3c7","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240943","label":"Curtis Yarvin","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240944","label":"Peter Thiel","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240945","label":"Sam Altman","type":"PERSONNE","fill":"#479a1b","colorStroke":"#479a1b","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240890","label":"litératie hypnotique","type":"POLITIQUE","fill":"#451322","colorStroke":"#451322","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240891","label":"hypnose probabiliste","type":"PSYCHOLOGIE","fill":"#f2b3c7","colorStroke":"#f2b3c7","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835},{"id":"20250905240892","label":"induction hypnotique","type":"PSYCHOLOGIE","fill":"#f2b3c7","colorStroke":"#f2b3c7","highlight":"#ff6a6a","size":2,"strokeWidth":2,"begin":1757091686.835}],"links":[{"id":0,"context":["[HyperNormalisation](https://fr.wikipedia.org/wiki/HyperNormalisation) est un film documentaire britannique réalisé par [[20250905240921|Adam Curtis]], sorti en 2016.<br>Dans le film [@AdamCurtis2016], Curtis avance que depuis les années 1970, les gouvernements, la finance et les utopistes technologiques ont abandonné la complexité du « monde réel » et ont construit un simple « monde factice » qui est géré par les entreprises et maintenu stable par les politiciens."],"type":"undefined","shape":{"stroke":"simple","dashInterval":null},"color":"#e1e1e1","colorHighlight":"#ff6a6a","source":"20250905240884","target":"20250905240921","report":[]}]};
+        const graphProperties = {"select_origin":"directory","files_origin":"C:\\Users\\chauv\\Documents\\TERMINOLOGY\\out","nodes_origin":"","links_origin":"","nodes_online":"","links_online":"","images_origin":"","export_target":"","history":false,"focus_max":2,"record_types":{"POLITIQUE":{"fill":"#451322","stroke":"#451322"},"GÉOPOLITIQUE":{"fill":"#9e4d66","stroke":"#9e4d66"},"PSYCHOLOGIE":{"fill":"#f2b3c7","stroke":"#f2b3c7"},"SOCIOÉCONOMIE":{"fill":"#85D4DB","stroke":"#85B0DB"},"PERSONNE":{"fill":"#479a1b","stroke":"#479a1b"},"undefined":{"fill":"#858585","stroke":"#858585"}},"link_types":{"undefined":{"stroke":"simple","color":"#e1e1e1"}},"record_filters":[],"graph_background_color":"#ffffff","graph_highlight_color":"#ff6a6a","graph_highlight_on_hover":true,"graph_text_size":10,"graph_arrows":true,"node_size_method":"degree","node_size":10,"node_size_max":20,"node_size_min":2,"attraction_force":200,"attraction_distance_max":250,"attraction_vertical":0,"attraction_horizontal":0,"views":{},"chronological_record_meta":"created","record_metas":[],"title":"Grand Continent","author":"jmc","description":"Vol. IV (2025)","keywords":[],"link_symbol":"![](Icon_External_Link.png)","csl":"style.csl","bibliography":"terminology-bib.json","csl_locale":"locales-fr-FR.xml","css_custom":"","devtools":false,"lang":"en","name":""};
+        const tagList = [{"name":"terminology","nodes":["20250905240884","20250905240893","20250905240894","20250905240895","20250905240896","20250905240897","20250905240898","20250905240899","20250905240900","20250905240901","20250905240902","20250905240885","20250905240903","20250905240904","20250905240905","20250905240906","20250905240907","20250905240908","20250905240909","20250905240910","20250905240911","20250905240912","20250905240886","20250905240913","20250905240914","20250905240915","20250905240916","20250905240917","20250905240918","20250905240919","20250905240920","20250905240921","20250905240922","20250905240887","20250905240923","20250905240924","20250905240925","20250905240926","20250905240927","20250905240928","20250905240929","20250905240930","20250905240931","20250905240932","20250905240888","20250905240933","20250905240934","20250905240935","20250905240936","20250905240937","20250905240938","20250905240939","20250905240940","20250905240941","20250905240942","20250905240889","20250905240943","20250905240944","20250905240945","20250905240890","20250905240891","20250905240892"]}];
+        const typeList = {"POLITIQUE":{"nodes":["20250905240884","20250905240894","20250905240895","20250905240896","20250905240899","20250905240900","20250905240901","20250905240902","20250905240885","20250905240904","20250905240905","20250905240906","20250905240907","20250905240912","20250905240888","20250905240890"],"active":true},"SOCIOÉCONOMIE":{"nodes":["20250905240893","20250905240908","20250905240909","20250905240910","20250905240911"],"active":true},"GÉOPOLITIQUE":{"nodes":["20250905240897","20250905240898","20250905240903","20250905240886","20250905240913","20250905240887"],"active":true},"PERSONNE":{"nodes":["20250905240914","20250905240915","20250905240916","20250905240917","20250905240918","20250905240919","20250905240920","20250905240921","20250905240922","20250905240923","20250905240924","20250905240925","20250905240926","20250905240927","20250905240928","20250905240929","20250905240930","20250905240931","20250905240932","20250905240933","20250905240934","20250905240935","20250905240936","20250905240937","20250905240938","20250905240939","20250905240940","20250905240941","20250905240942","20250905240943","20250905240944","20250905240945"],"active":true},"PSYCHOLOGIE":{"nodes":["20250905240889","20250905240891","20250905240892"],"active":true}};
+        const timeline = {"begin":1757091686.788,"end":1757091686.835};
+        const sorting = {"records":[{"alphabetical":19,"chronological":0},{"alphabetical":26,"chronological":1},{"alphabetical":27,"chronological":2},{"alphabetical":43,"chronological":3},{"alphabetical":46,"chronological":4},{"alphabetical":52,"chronological":5},{"alphabetical":55,"chronological":6},{"alphabetical":59,"chronological":7},{"alphabetical":0,"chronological":8},{"alphabetical":4,"chronological":9},{"alphabetical":6,"chronological":10},{"alphabetical":8,"chronological":11},{"alphabetical":10,"chronological":12},{"alphabetical":11,"chronological":13},{"alphabetical":12,"chronological":14},{"alphabetical":13,"chronological":15},{"alphabetical":14,"chronological":16},{"alphabetical":16,"chronological":17},{"alphabetical":25,"chronological":18},{"alphabetical":35,"chronological":19},{"alphabetical":40,"chronological":20},{"alphabetical":50,"chronological":21},{"alphabetical":51,"chronological":22},{"alphabetical":56,"chronological":23},{"alphabetical":58,"chronological":24},{"alphabetical":1,"chronological":25},{"alphabetical":2,"chronological":26},{"alphabetical":2,"chronological":26},{"alphabetical":5,"chronological":28},{"alphabetical":21,"chronological":29},{"alphabetical":22,"chronological":30},{"alphabetical":23,"chronological":31},{"alphabetical":24,"chronological":32},{"alphabetical":31,"chronological":33},{"alphabetical":33,"chronological":34},{"alphabetical":36,"chronological":35},{"alphabetical":37,"chronological":36},{"alphabetical":53,"chronological":37},{"alphabetical":54,"chronological":38},{"alphabetical":61,"chronological":39},{"alphabetical":7,"chronological":40},{"alphabetical":9,"chronological":41},{"alphabetical":15,"chronological":42},{"alphabetical":17,"chronological":43},{"alphabetical":18,"chronological":44},{"alphabetical":20,"chronological":45},{"alphabetical":28,"chronological":46},{"alphabetical":29,"chronological":47},{"alphabetical":30,"chronological":48},{"alphabetical":32,"chronological":49},{"alphabetical":34,"chronological":50},{"alphabetical":38,"chronological":51},{"alphabetical":39,"chronological":52},{"alphabetical":41,"chronological":53},{"alphabetical":42,"chronological":54},{"alphabetical":44,"chronological":55},{"alphabetical":45,"chronological":56},{"alphabetical":47,"chronological":57},{"alphabetical":48,"chronological":58},{"alphabetical":49,"chronological":59},{"alphabetical":57,"chronological":60},{"alphabetical":60,"chronological":61}],"tags":[{"alphabetical":0,"digital":0}]};
 
         const focusIsActive = true;
     </script>

@@ -6,24 +6,24 @@ nodes_online: ""
 links_online: ""
 images_origin: ""
 export_target: ""
-history: true
+history: false
 focus_max: 2
 record_types:
   POLITIQUE:
     fill: "#451322"
     stroke: "#451322"
-  GEOPOLITIQUE:
+  GÉOPOLITIQUE:
     fill: "#9e4d66"
     stroke: "#9e4d66"
   PSYCHOLOGIE:
     fill: "#f2b3c7"
     stroke: "#f2b3c7"
-  SOCIOECONOMIE:
+  SOCIOÉCONOMIE:
     fill: "#85D4DB"
     stroke: "#85B0DB"
   PERSONNE:
-    fill:"#479e1b"
-    stroke:"#479e1b"
+    fill: "#479a1b"
+    stroke: "#479a1b"
   undefined:
     fill: "#858585"
     stroke: "#858585"
