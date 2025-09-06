@@ -44,7 +44,7 @@
        "\nVoir aussi : "		terminology-seealso
        "\nÉquivalent étranger : "	terminology-foreign
        
-       "\n\n====== Comments ======\n\n"
+       "\n\n====== Commentaire ======\n\n"
        terminology-attention
        ))
 
@@ -85,9 +85,20 @@ global counter."
 		      (caddr fields)
 		      "" ;; Tags
 		      )
-	      (car (cddddr fields))))
+	      (format "\n\n## Définition\n\n%s\n" (car (cddddr fields)))
+	      (if (not (string= "" (cadr (cddddr fields))))
+		  (format "\n\n## Note\n\n%s\n" (cadr (cddddr fields))) "")
+	      (if (not (string= "" (caddr (cddddr fields))))
+		  (format "\n\n## Voir aussi\n\n%s\n" (caddr (cddddr fields))) "")
+	      (if (not (string= "" (cadddr (cddddr fields))))
+		  (format "\n\n## Équivalent étranger\n\n<i>%s</i>\n" (cadddr (cddddr fields))) "")
+	      (if (not (string= "" (car (cddddr (cddddr fields)))))
+		  (format "<hr>\n\n## Commentaire\n\n%s\n" (car (cddddr (cddddr fields)))) "")
+	      )
+      )
     (cons (car fields) newid)
-    ))
+    )
+  )
 
 (defun terminology--patch-links (count title-id)
   (dotimes (i (1- count))
@@ -97,7 +108,7 @@ global counter."
 	(erase-buffer)
 	(insert-file-contents fni)
 	(dolist (tid title-id)
-	  (replace-string-in-region (format "[[%s]]" (car tid)) (format "[[%s|%s]]" (cdr tid) (car tid)) (point-min) (point-max))
+	  (replace-string-in-region (format "%s]]" (car tid)) (format "%s|%s]]" (cdr tid) (car tid)) (point-min) (point-max))
 	  )
 	(write-region nil nil fni)
 	)

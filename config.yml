@@ -28,6 +28,12 @@ record_types:
     fill: "#858585"
     stroke: "#858585"
 link_types:
+  promoteur:
+    stroke: simple
+    color: "#451322"
+  contributeur:
+    stroke: simple
+    color: "#479a1b"
   undefined:
     stroke: simple
     color: "#e1e1e1"
