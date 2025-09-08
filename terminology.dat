@@ -49,7 +49,7 @@
        ))
 
 ;;----------------------------------------------------------------------
-
+;; Cosma generation
 (defvar terminology-cosma-zero-id 240000 "Start beyond 23:59:59 for id generation")
 (defvar terminology-temp-out-buffer "*OUT-CSV*")
 (defconst terminology-cosma-yaml-template "---
@@ -76,6 +76,7 @@ global counter."
 (defun terminology--parse-current-row ()
   (let ((fields (csv-parse-current-row))
 	(newid (terminology-cosma--newid))
+	(idfields '(("PERSONNE" . "\n\n## Qui est-ce ?\n\n%s\n")))
 	)
     (with-current-buffer (get-buffer-create terminology-temp-out-buffer)
       (erase-buffer)
@@ -85,14 +86,17 @@ global counter."
 		      (caddr fields)
 		      "" ;; Tags
 		      )
-	      (format "\n\n## Définition\n\n%s\n" (car (cddddr fields)))
+	      (if (assoc (caddr fields) idfields)
+		  (format (cdr (assoc (caddr fields) idfields)) (car (cddddr fields)))
+		(format "\n\n## Définition\n\n%s\n" (car (cddddr fields))))
 	      (if (not (string= "" (cadr (cddddr fields))))
 		  (format "\n\n## Note\n\n%s\n" (cadr (cddddr fields))) "")
 	      (if (not (string= "" (caddr (cddddr fields))))
 		  (format "\n\n## Voir aussi\n\n%s\n" (caddr (cddddr fields))) "")
 	      (if (not (string= "" (cadddr (cddddr fields))))
 		  (format "\n\n## Équivalent étranger\n\n<i>%s</i>\n" (cadddr (cddddr fields))) "")
-	      (if (not (string= "" (car (cddddr (cddddr fields)))))
+	      (if (and (cddddr (cddddr fields))
+		       (not (string= "" (car (cddddr (cddddr fields))))))
 		  (format "<hr>\n\n## Commentaire\n\n%s\n" (car (cddddr (cddddr fields)))) "")
 	      )
       )
@@ -107,6 +111,9 @@ global counter."
       (with-current-buffer (get-buffer-create terminology-temp-out-buffer)
 	(erase-buffer)
 	(insert-file-contents fni)
+	;; Patch multi-lines
+	(replace-string-in-region "\^k" "\n" (point-min) (point-max))
+	;; Patch links
 	(dolist (tid title-id)
 	  (replace-string-in-region (format "%s]]" (car tid)) (format "%s|%s]]" (cdr tid) (car tid)) (point-min) (point-max))
 	  )
@@ -233,7 +240,19 @@ global counter."
 
 (setq
  imenu-create-index-function	#'terminology-form--create-index
- forms-mode-hook		#'imenu-list
+ forms-mode-hook		(lambda ()
+				  ;; Abbreviations from config.yml for DOMAINS
+				  (define-mode-abbrev "per" "PERSONNE")
+				  (define-mode-abbrev "pol" "POLITIQUE")
+				  (define-mode-abbrev "geo" "GÉOPOLITIQUE")
+				  (define-mode-abbrev "soc" "SOCIOÉCONOMIE")
+				  (define-mode-abbrev "psy" "PSYCHOLOGIE")
+				  (abbrev-mode)
+				  ;; Company-mode
+				  (setq company-require-match nil)
+				  (company-mode)
+				  ;; Imenu list of terms
+				  (imenu-list)) 
  forms-write-file-filter	#'imenu-list-refresh
  )
 

@@ -28,7 +28,7 @@ record_types:
     fill: "#858585"
     stroke: "#858585"
 link_types:
-  promoteur:
+  contra:
     stroke: simple
     color: "#451322"
   contributeur:
