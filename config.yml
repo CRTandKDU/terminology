@@ -34,6 +34,9 @@ link_types:
   contributeur:
     stroke: simple
     color: "#479a1b"
+  promoteur:
+    stroke: simple
+    color: "#85B0DB"
   undefined:
     stroke: simple
     color: "#e1e1e1"
